@@ -1,0 +1,110 @@
+.header {
+    min-height: 98px;
+    height: 98px;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+}
+
+.menu {
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+
+    &__wrapper {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background: $black;
+        z-index: 999;
+        align-items: center;
+    }
+
+    &__links {
+        list-style-type: none;
+    }
+
+    &__link {
+        a {
+            color: $white;
+            text-decoration: none;
+            font-size: 25px;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $strongCyan;
+                transition: 0.3s all;
+            }
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+        color: $darkDesaturatedBlue;
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+            color: $strongCyan;
+            transition: 0.15s all;
+            text-decoration: none;
+
+            .nav__title_cyan {
+                color: $darkDesaturatedBlue;
+                transition: 0.15s all;
+            }
+        }
+
+        &_cyan {
+            color: $strongCyan;
+        }
+    }
+
+    &__links {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        display: inline-block;
+
+        &:not(:first-child),
+        &:not(:last-child) {
+            padding: 0 19px;
+            transition: 0.15s all;
+        }
+
+        a {
+            color: $mostlyDesaturatedBlue;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &:focus,
+            &:visited {
+                color: $strongCyan;
+                transition: 0.15s all;
+            }
+
+            &:hover,
+            &:active {
+                color: $darkModerateViolet;
+                transition: 0.15s all;
+            }
+        }
+    }
+}

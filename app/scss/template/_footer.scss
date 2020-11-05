@@ -1,0 +1,128 @@
+.footer {
+    min-height: 290px;
+    background-color: #2c3e50;
+
+    &__wrapper {
+        padding-top: 63px;
+    }
+
+    &__item {
+        z-index: 2;
+        position: relative;
+
+        &:not(:first-child) {
+            &::before {
+                content: '';
+                position: absolute;
+                left: -3px;
+                display: block;
+                width: 2px;
+                height: 212px;
+                background: $separatorBlack;
+                margin-top: 10px;
+                z-index: 1;
+            }
+        }
+    }
+
+    &__title {
+        color: $strongCyan;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    &__descr {
+        color: $white;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-top: 19px;
+    }
+
+    &__news {
+        margin-top: 23px;
+
+        img {
+            display: block;
+            width: 25px;
+            height: 25px;
+            padding: 5px;
+            border: 1px solid $white;
+            margin-right: 13px;
+            border-radius: 2px;
+        }
+
+        &__content {
+            margin-bottom: 27px;
+        }
+
+        &__item {
+            display: flex;
+        }
+
+        &__title {
+            color: $white;
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        &__posted {
+            color: $strongCyan;
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+
+    &__tags {
+        margin-top: 14px;
+    }
+
+    &__tag {
+        color: $white;
+        font-size: 13px;
+        font-weight: 400;
+        text-decoration: none;
+        border: 1px solid $white;
+        border-radius: 2px;
+        padding: 7px;
+        display: inline-block;
+        margin: 0px 0px 7px 0px;
+        z-index: -2;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $white;
+            background: $strongCyan;
+            border: 1px solid $strongCyan;
+            transition: 0.25s all;
+        }
+    }
+
+    &__contacts {
+        margin-top: 19px;
+        color: $white;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 26px;
+
+        a {
+            color: $white;
+            text-decoration: none;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $strongCyan;
+                transition: 0.25s all;
+            }
+        }
+
+    }
+
+    &__email {
+        color: $strongCyan;
+        font-size: 13px;
+        font-weight: 400;
+    }
+}

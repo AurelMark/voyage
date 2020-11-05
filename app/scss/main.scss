@@ -1,0 +1,39 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.show {
+    display: flex !important;
+}
+
+.hide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 0.25s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ui-datepicker {
+    z-index: 999 !important;
+}
+
+@import 'modules/variables';
+@import 'modules/buttons';
+@import 'modules/inputs';
+@import 'modules/container';
+@import 'template/header';
+@import 'template/content';
+@import 'template/footer';
+@import 'modules/media';

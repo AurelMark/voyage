@@ -1,0 +1,46 @@
+.button {
+    padding: 21px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+
+    &__primary {
+        background: $strongCyan;
+
+        &:hover {
+            background: $darkStrongCyan;
+            transition: 0.25s all;
+        }
+        &_search {
+            padding: 16px 24px;
+            margin-left: 24px;
+        }
+    }
+
+    &_ghost {
+        padding: 19px;
+        background: transparent;
+        border: 2px solid $white;
+
+        &:hover {
+            background: $strongCyan;
+            transition: 0.25s all;
+            border: 2px solid $strongCyan;
+        }
+    }
+
+    &_space {
+        margin-right: 28px;
+    }
+    &_small {
+        height: 42px;
+        padding: 11px 15px;
+    }
+    &_space-sm {
+        margin-left: 6px;
+    }
+}
